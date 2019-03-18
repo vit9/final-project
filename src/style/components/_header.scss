@@ -1,0 +1,131 @@
+.header {
+	display:flex;
+	
+
+	&__logo {
+		width: 20%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;	
+	}
+
+	&__searchLine{
+		width: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__auth {
+		width: 20%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		&__container{
+			
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+			.avatar{
+				padding-right: 5px;
+			}
+
+			.text{
+				color: $el-color;
+				font-size: 18px;
+			}
+		}
+	}
+}
+
+.searchInput::-webkit-input-placeholder, .button {
+    font-family: 'roboto', sans-serif;
+    transition: all 0.3s ease-in-out;
+}
+  
+.searchInput{   
+	margin: 40px 25px;
+	width: 75%;
+	display: block;
+	border: none;
+	padding: 10px 0;
+	border-bottom: solid 1px $color;
+	transition: all 0.3s cubic-bezier(.64,.09,.08,1);
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 96%, $color 4%);
+	background-position: -700px 0;
+	background-size: 700px 100%;
+	background-repeat: no-repeat;
+	color: darken($color,1%);
+	
+	&:focus {
+		box-shadow: none;
+		outline: none;
+		background-position: 0 0;
+		&::-webkit-input-placeholder {
+			text-indent: 700px; transition: text-indent 0.5s ease;
+		}
+	}
+}
+.searchBtn{
+    border:none;
+    outline: none;
+    border: 0px;
+    cursor: pointer;
+	color: $primary;
+	transition: .3s ease-out;
+	
+	&:hover,
+	&:focus { 
+    	transform: scale(1.125);
+    
+    	.icon {
+	  		transform: scale(1.25); 
+		} 
+	} 
+        // Display/alignment
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        
+        // Sizing
+        width: 68px;
+        height: 68px;
+        border-radius: 34px;
+        
+        // Style
+        background-color: $white;
+        box-shadow:
+          0 1px 1px rgba($background-3, .6),
+          0 3px 3px rgba($background-3, .4),
+          0 8px 16px rgba($background-3, .3);
+        
+        &:hover,
+        &:focus {
+          box-shadow:
+            0 2px 2px rgba($background-3, .4),
+            0 4px 4px rgba($background-3, .3),
+            0 12px 32px rgba($background-3, .3); } 
+}
+
+.fill-currentcolor {
+	fill: currentcolor; 
+}
+  
+.fill-none {
+	fill: none; 
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    transition: .3s ease-out;
+        
+    @media (min-width: $breakpoint) {
+      	width: 32px;
+		height: 32px; 
+	} 
+}

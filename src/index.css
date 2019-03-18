@@ -1,0 +1,99 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+.logo{
+  
+  width: 20%;
+}
+.header{
+  display:flex;
+  
+}
+.searchLine{
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+.searchInput{
+  width: 80%;
+}
+.auth{
+  width: 20%;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+.avatar{
+  padding: 0 10px;
+}
+.link{
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+}
+.ras{
+  display: flex;
+}
+.ras1{
+  display: flex;
+  width: 20%;
+}
+.ras2{
+  display: flex;
+  width: 300px;
+  height: 300px;
+}
+.as{
+  border: 4px outset;
+  border-radius: 5px;
+  margin: 5px;
+}
+.img{
+  width: 250px;
+  height: 250px;
+  
+}
+.staffs{
+  display:flex;
+ 
+}
+.staff{
+  width: 250px;
+  height: 250px;
+}
+.topbutton {
+  width:50px;
+  border:2px solid #ccc;
+  background:#f7f7f7;
+  text-align:center;
+  padding:10px;
+  position:fixed;
+  bottom:50px;
+  right:50px;
+  cursor:pointer;
+  color:#333;
+  font-family:verdana;
+  font-size:12px;
+  border-radius: 50px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -khtml-border-radius: 50px;
+  }
+
+  

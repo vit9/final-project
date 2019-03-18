@@ -1,0 +1,33 @@
+.ant-layout-sider-children{
+    background: $el-color; 
+    height: 170%; 
+}
+.ant-menu-submenu-title{
+    font-size: 20px;
+    background: $el-color; 
+    margin: 0;
+        &:hover {
+            background: rgb(223, 111, 98);
+            margin: 0;
+        }
+}
+.ant-menu-dark{
+    background: $el-color;
+}
+.ant-layout-sider-trigger {
+    position: fixed;
+    text-align: center;
+    bottom: 0;
+    cursor: pointer;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    background: #e06b62;
+    z-index: 1;
+    transition: all 0.2s;
+}
+.ant-menu .ant-menu-sub .ant-menu-inline{
+    & :hover{
+        background: #db5b51d2;
+    }  
+}
